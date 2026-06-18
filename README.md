@@ -22,19 +22,6 @@ so the reported PSNR is directly comparable.
 
 (Exact numbers vary slightly with the random seed and step counts.)
 
-## Slides
-
-`denoising_tutorial_slides.pptx` — a simple black-and-white deck (13 slides) for
-a broad audience: intro to denoising, then BM3D, supervised, Noise2Void,
-Noise2Self, and DPS, plus a results comparison and cheat sheet. All figures are
-original (our own schematics and our own computed results); the source papers
-are cited so you can drop in their figures yourself if you wish. Rebuild with:
-
-```bash
-python gen_slide_figures.py   # writes figures into slides_assets/
-python build_slides.py        # assembles the .pptx
-```
-
 ## Running on Google Colab
 
 1. Open [colab.research.google.com](https://colab.research.google.com) → **File ▸ Upload notebook** and pick one of the `.ipynb` files (or drag it in).
@@ -76,10 +63,3 @@ domain, which a generic upload does not provide.
   process toward the measurement. The same loop generalises to inpainting,
   super-resolution and deblurring by changing one operator.
 
-## Regenerating the notebooks
-
-The notebooks are produced from a single script so they stay consistent:
-
-```bash
-python build_notebooks.py
-```
