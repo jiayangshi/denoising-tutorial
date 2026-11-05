@@ -6,10 +6,10 @@ free Colab GPU and installs only a minimal set of packages.
 
 | # | Notebook | Idea | Needs clean data? | Needs noise sigma? | Extra install |
 |---|----------|------|:---:|:---:|---|
-| 1 | [`1_BM3D.ipynb`](1_BM3D.ipynb) | Classical patch filtering (baseline) | no | **yes** | `bm3d` |
-| 2 | [`2_Noise2Void.ipynb`](2_Noise2Void.ipynb) | Blind-spot self-supervision | no | no | — (PyTorch) |
-| 3 | [`3_Noise2Self.ipynb`](3_Noise2Self.ipynb) | J-invariant self-supervision | no | no | — (PyTorch) |
-| 4 | [`4_DPS.ipynb`](4_DPS.ipynb) | Pretrained diffusion prior (generative) | no | no | `diffusers` |
+| 1 | [`1_BM3D.ipynb`](https://colab.research.google.com/github/jiayangshi/denoising-tutorial/blob/main/1_BM3D.ipynb) | Classical patch filtering (baseline) | no | **yes** | `bm3d` |
+| 2 | [`2_Noise2Void.ipynb`](https://colab.research.google.com/github/jiayangshi/denoising-tutorial/blob/main/2_Noise2Void.ipynb) | Blind-spot self-supervision | no | no | — (PyTorch) |
+| 3 | [`3_Noise2Self.ipynb`](https://colab.research.google.com/github/jiayangshi/denoising-tutorial/blob/main/3_Noise2Self.ipynb) | J-invariant self-supervision | no | no | — (PyTorch) |
+| 4 | [`4_DPS.ipynb`](https://colab.research.google.com/github/jiayangshi/denoising-tutorial/blob/main/4_DPS.ipynb) | Pretrained diffusion prior (generative) | no | no | `diffusers` |
 
 All notebooks share the **same ground-truth face and the same noise** (sigma = 25/255),
 so the reported PSNR is directly comparable.
@@ -24,8 +24,8 @@ so the reported PSNR is directly comparable.
 
 ## Running on Google Colab
 
-1. Open [colab.research.google.com](https://colab.research.google.com) → **File ▸ Upload notebook** and pick one of the `.ipynb` files (or drag it in).
-2. **Runtime ▸ Change runtime type ▸ GPU** (a free T4 is plenty; only notebooks 2–4 need it).
+1. Click a notebook link in the table above to open it directly in Google Colab.
+2. Each notebook includes metadata requesting a GPU accelerator. If needed, select **Runtime ▸ Change runtime type ▸ T4 GPU** (only notebooks 2–4 need it).
 3. **Runtime ▸ Run all.**
 
 Each notebook downloads one CelebA-HQ face from the HuggingFace datasets server; if that
