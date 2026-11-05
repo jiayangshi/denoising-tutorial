@@ -1,5 +1,7 @@
 # Deep Learning for Image Denoising — hands-on notebooks
 
+The accompanying presentation slides are available in [Slides.pdf](Slides.pdf).
+
 Four small, self-contained Colab notebooks that denoise the **same** Gaussian-noised
 CelebA face with four different philosophies. Each runs in a couple of minutes on a
 free Colab GPU and installs only a minimal set of packages.
